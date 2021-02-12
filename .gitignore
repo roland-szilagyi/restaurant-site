@@ -1,0 +1,4 @@
+.gitignore
+*.orig
+.DS_Store
+/.vscode
