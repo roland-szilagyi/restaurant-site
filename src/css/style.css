@@ -1,0 +1,11 @@
+.outline {
+    outline: 1px solid red;
+}
+
+.outline2 {
+    outline: 1px solid green;
+}
+
+.bob-size {
+    width: 5rem;
+}
