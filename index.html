@@ -9,37 +9,43 @@
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-
-    <!--Navigacio-->
+    <!--Navigation-->
     <header>
-        <nav class="nav lead outline container justify-content-evenly">
-            <a class="nav-link active" aria-current="page" href="#">RESERVATIONS</a>
-            <a class="nav-link" href="#">MENÜ</a>
-            <a class="nav-link" href="#">GIFT CARD</a>
-            <a class="nav-link" href="#">ABOUT</a>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid mx-1">
+                <a class="navbar-brand fs-6" href="#">MENÜ</a>
+                <img class="logo-size logo-hide py-2"src="./src/assets/images/logo.png" alt="restaurantlogo">
+              <button class="navbar-toggler fs-6" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNavAltMarkup" 
+              aria-controls="navbarNavAltMarkup" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse justify-content-evenly" id="navbarNavAltMarkup">
+                <div class="navbar-nav col-12 align-items-center justify-content-evenly">
+                  <a class="nav-link active" aria-current="page" href="#">RESERVATIONS</a>
+                  <a class="nav-link" href="#">MENÜ</a>
+                  <img class="logo-size logo-hide2 py-2"src="./src/assets/images/logo.png" alt="restaurantlogo">
+                  <a class="nav-link" href="#">GIFT CARD</a>
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">LOCATIONS</a>
+                </div>
+              </div>
+            </div>
         </nav>
     </header>
-    
-    <!--Logo-->
-    <section class="outline container text-center">
-        <img class="outline2 bob-size" src="./src/assets/images/logo-test.png" alt="restaurantlogo"> <!--logo meretezeset lehet mashogy kell megoldani-->
-    </section>
-    
-    <!--Carousel-->
-    <div id="carouselExampleControls" class="carousel slide m-3" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./src/assets/images/carousel1-test.jpeg" class="d-block w-100" alt="kep1">
-          </div>
-          <div class="carousel-item">
-            <img src="./src/assets/images/carousel2-test.jpeg" class="d-block w-100" alt="kep2">
-          </div>
-          <div class="carousel-item">
-            <img src="./src/assets/images/carousel3-test.jpeg" class="d-block w-100" alt="kep3">
-          </div>
+    <!--WELCOME-carousel-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./src/assets/images/welcome-carousel1.jpg" class="d-block w-100" alt="welcomeslide1">
         </div>
+        <div class="carousel-item">
+          <img src="./src/assets/images/welcome-carousel2.jpg" class="d-block w-100" alt="welcomeslide2">
+        </div>
+      </div>
     </div>
-
     <script src="./src/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

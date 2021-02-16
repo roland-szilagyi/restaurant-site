@@ -6,6 +6,40 @@
     outline: 1px solid green;
 }
 
-.bob-size {
-    width: 5rem;
+/*----TEMP-END----*/
+/*----NAVIGATION----*/
+.logo-size {
+    width: 11rem;
 }
+
+.bob-background {
+    background-image: url("/src/assets/images/background1.png");
+    background-size: cover;
+    height: 90vh;
+}
+
+/*navigacio*/
+@media (min-width: 576px) {
+    /*--NAVIGATION--*/
+    .navbar-brand {
+        display: none;
+    }
+    
+    .logo-hide {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-hide2 {
+        display: none;
+    }
+
+    .navbar-dark,
+    .navbar-toggler {
+        border-color: rgba(255,255,255,0)!important
+    }
+}
+
+
+
