@@ -14,7 +14,7 @@
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <div class="container-fluid mx-1">
                 <a class="navbar-brand fs-6" href="#">MENÜ</a>
-                <img class="logo-size logo-hide py-2"src="./src/assets/images/logo.png" alt="restaurantlogo">
+                <img class="w-50 d-sm-none py-2"src="./src/assets/images/logo.png" alt="restaurantlogo">
               <button class="navbar-toggler fs-6" type="button" data-bs-toggle="collapse" 
               data-bs-target="#navbarNavAltMarkup" 
               aria-controls="navbarNavAltMarkup" 
@@ -27,7 +27,7 @@
                 <div class="navbar-nav col-12 align-items-center justify-content-evenly">
                   <a class="nav-link active" aria-current="page" href="#">RESERVATIONS</a>
                   <a class="nav-link" href="#">MENÜ</a>
-                  <img class="logo-size logo-hide2 py-2"src="./src/assets/images/logo.png" alt="restaurantlogo">
+                  <img class="w-25 d-none d-sm-block py-2"src="./src/assets/images/logo.png" alt="restaurantlogo">
                   <a class="nav-link" href="#">GIFT CARD</a>
                   <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">LOCATIONS</a>
                 </div>
@@ -36,7 +36,7 @@
         </nav>
     </header>
     <!--WELCOME-carousel-->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide border-top border-bottom border-secondary" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="./src/assets/images/welcome-carousel1.jpg" class="d-block w-100" alt="welcomeslide1">
@@ -46,6 +46,39 @@
         </div>
       </div>
     </div>
+    <!--MENÜ-->
+  
+    <article class="outline d-flex flex-column align-items-stretch py-5 flex-md-row bob-background">
+      <h2 class="outline text-muted text-center d-md-none">MENÜ</h2>
+      <div class="outline container-fluid d-flex flex-column justify-content-evenly col-12 col-md-8"><!--MENÜSOR-->
+        <div class="outline py-4 px-5 text-muted">
+          <h2 class="text-center col-4 lh-lg">levesek</h2>
+          <p>leves-1 Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+          <p>leves-2 Lorem ipsum dolor sit amet consectetur.</p>
+          <p>leves-3 Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        
+        <div class="outline py-4 px-5 text-muted">
+          <h2 class="text-center col-4 lh-lg">föetelek</h2>
+          <p>föetel-1 Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <p>föetel-2 Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+          <p>föetel-3 Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        
+        <div class="outline py-4 px-5 text-muted">
+          <h2 class="text-center col-4 lh-lg">desszertek</h2>
+          <p>desszert-1 Lorem ipsum dolor sit amet consectetur.</p>
+          <p>desszert-2 Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <p>desszert-3 Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+      </div>
+
+      <div class="outline container-fluid d-flex flex-column justify-content-evenly align-items-center align-items-md-center p-4 col-md-4"><!--KEPEK-->
+        <img class="img-fluid py-2 d-none d-md-block" src="./src/assets/images/menu-img.jpg" alt="tools">
+      </div>
+    
+    </article>
+
     <script src="./src/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
