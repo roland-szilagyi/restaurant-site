@@ -6,11 +6,34 @@
     outline: 1px solid green;
 }
 
+.outline3 {
+    outline: 1px solid purple;
+}
+
+.outline4 {
+    outline: 1px solid blue;
+}
+
+.outline5 {
+    outline: 1px solid yellow;
+}
+
 /*----TEMP-END----*/
+
+/*----FONTS----*/
+
+.menufont {
+    font-family: "chalkduster";
+}
+
+.menu-title-font {
+    font-family: "system-ui"
+}
+
 /*----NAVIGATION----*/
 
 .bob-background {
-    background-image: url("/src/assets/images/background1.png");
+    background-image: url("/src/assets/images/background2.png");
     background-size: cover;
     height: 100%;
 }

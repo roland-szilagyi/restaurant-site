@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./src/css/bootstrap.min.css">
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
-<body>
+<body class="bob-backgroun"><!--elvettem a "d"-t-->
+    
     <!--Navigation-->
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -35,6 +36,7 @@
             </div>
         </nav>
     </header>
+
     <!--WELCOME-carousel-->
     <div id="carouselExampleControls" class="carousel slide border-top border-bottom border-secondary" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -46,37 +48,122 @@
         </div>
       </div>
     </div>
-    <!--MENÜ-->
-  
-    <article class="outline d-flex flex-column align-items-stretch py-5 flex-md-row bob-background">
-      <h2 class="outline text-muted text-center d-md-none">MENÜ</h2>
-      <div class="outline container-fluid d-flex flex-column justify-content-evenly col-12 col-md-8"><!--MENÜSOR-->
-        <div class="outline py-4 px-5 text-muted">
-          <h2 class="text-center col-4 lh-lg">levesek</h2>
-          <p>leves-1 Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-          <p>leves-2 Lorem ipsum dolor sit amet consectetur.</p>
-          <p>leves-3 Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        </div>
-        
-        <div class="outline py-4 px-5 text-muted">
-          <h2 class="text-center col-4 lh-lg">föetelek</h2>
-          <p>föetel-1 Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          <p>föetel-2 Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-          <p>föetel-3 Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-        
-        <div class="outline py-4 px-5 text-muted">
-          <h2 class="text-center col-4 lh-lg">desszertek</h2>
-          <p>desszert-1 Lorem ipsum dolor sit amet consectetur.</p>
-          <p>desszert-2 Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          <p>desszert-3 Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-      </div>
 
-      <div class="outline container-fluid d-flex flex-column justify-content-evenly align-items-center align-items-md-center p-4 col-md-4"><!--KEPEK-->
-        <img class="img-fluid py-2 d-none d-md-block" src="./src/assets/images/menu-img.jpg" alt="tools">
+    <!--MENÜ-->
+    <section class="outline1 d-flex container-fluid justify-content-center p-2 py-5">
+      <div class="outline2 d-flex flex-column col-10">
+        <div class="text-center p-4">
+          <h3>MENÜ</h3>
+        </div>
+
+        <h5 class="outline3 text-center p-4">SOUPS</h5>
+        
+        <div class="outline3 d-flex justify-content-between">
+          <div class="outline4">
+            <div>soup1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quidem!</div>
+            <div>soup2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, non?</div>
+            <div>soup3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ipsam!</div>
+          </div>
+          <div class="outline4 col-2 d-flex flex-column justify-content-between align-items-center">
+            <div>15€</div>
+            <div>50€</div>
+            <div>12€</div>
+          </div>
+        </div>
+        
+        <h5 class="outline3 text-center p-4">MAIN COURSE</h5>
+        
+        <div class="outline3 d-flex justify-content-between">
+          <div class="outline4">
+            <div>main1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sint?</div>
+            <div>main2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sint?</div>
+            <div>main3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sint?</div>
+          </div>
+          <div class="outline4 col-2 d-flex flex-column justify-content-between align-items-center">
+            <div>22€</div>
+            <div>24€</div>
+            <div>29€</div>
+          </div>
+        </div>
+
+        <h5 class="outline3 text-center p-4">DESSERT</h5>
+
+        <div class="outline3 d-flex justify-content-between">
+          <div class="outline4">
+            <div>dessert1 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, fugiat!</div>
+            <div>dessert2 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, fugiat!</div>
+            <div>dessert3 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, fugiat!</div>
+          </div>
+          <div class="outline4 col-2 d-flex flex-column justify-content-between align-items-center">
+            <div>7€</div>
+            <div>6€</div>
+            <div>8€</div>
+          </div>
+        </div>
       </div>
-    
+    </section>
+
+    <!--FOGLALAS-->
+    <article class="outline4 d-flex">
+        <!--BALOLDAL KONTENER-->
+        <section class="align-self-center d-none d-md-block p-4">
+          <img class="img-fluid" src="./src/assets/images/reserv-img.jpg" alt="">
+        </section>
+        
+        <!--JOBB KONTENR-->
+        <section class="outline container-fluid d-flex flex-column justify-content-evenly"><!--JOBBOLDAL KONTENER-->
+            
+            <div class="outline2 container-fluid text-center">
+              <h2 class="p-5 text-warning">RESERVATION</h2>
+            </div>
+
+            <form class="py-5 outline3 container-fluid d-flex align-items-center flex-column text-center col-sm-7 col-md-12 col-xl-8">
+              
+              <div class="mb-3 py-1 col-10">
+                <label for="reservationname" class="form-label">Name</label>
+                <input type="name" class="form-control text-center" id="reservationname" aria-describedby="reservation-name">
+                <div id="reservationname" class="form-text"></div>
+              </div>
+
+              <div class="mb-3 py-1">
+                <label for="reservationdate" class="form-label">Date</label>
+                <input type="date" class="form-control text-center" id="reservationdate" aria-describedby="reservation-date">
+                <div id="reservationdate" class="form-date"></div>
+              </div>
+
+              <div class="mb-3 py-1">
+                <label for="reservationtime" class="form-label">Time</label>
+                <input type="time" class="form-control text-center" id="reservationtime" aria-describedby="reservation-time">
+                <div id="reservationtime" class="form-time"></div>
+              </div>
+
+              <div class="input-group mb-3 py-4 px-4">
+                <label class="input-group-text py-2" for="inputGroupSelect01">Person</label>
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">2 Person</option>
+                  <option value="2">4 Person</option>
+                  <option value="3">6 Person</option>
+                  <option value="3">8+ Person</option>
+                </select>
+              </div>
+
+              <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic checkbox toggle button group">
+                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                <label class="btn btn-outline-success" for="btncheck1">Gluten-free</label>
+              
+                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                <label class="btn btn-outline-success" for="btncheck2">Lactose-free</label>
+              
+                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                <label class="btn btn-outline-success" for="btncheck3">Vegan</label>
+              </div>
+
+              <div class="outline container-fluid text-center py-5">
+                <button class="btn btn-danger btn-lg">Reserve</button>
+              </div>
+            </form>
+        </section>
     </article>
 
     <script src="./src/js/bootstrap.bundle.min.js"></script>
