@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <script src="https://kit.fontawesome.com/d9f73bf2ac.js" crossorigin="anonymous"></script>
 </head>
-<body class="bob-backgroun"><!--elvettem a "d"-t-->
+<body class="bob-background"><!--elvettem a "d"-t-->
     
     <!--Navigation-->
     <header>
@@ -43,64 +43,73 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="./src/assets/images/welcome-carousel1.jpg" class="d-block w-100" alt="welcomeslide1">
+          <button type="button" class="btn btn-danger bookatable-btn">BOOK A TABLE</button>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-ite"><!--m kiveve-->
           <img src="./src/assets/images/welcome-carousel2.jpg" class="d-block w-100" alt="welcomeslide2">
         </div>
       </div>
     </div>
 
     <!--MENÜ-->
-    <section class="outline1 d-flex container-fluid justify-content-center p-2 py-5" id="menü">
-      <div class="outline2 d-flex flex-column col-10">
-        <div class="text-center p-4 text-warning">
-          <h3>MENÜ</h3>
+    <section class="border d-flex container-fluid col-12 justify-content-center p-2 py-5" id="menü">
+      
+      <div class="outline2 d-flex flex-column col-10 col-md-6">
+        <div class="text-center p-4 text-light font3">
+          <h2 class="fs-1">MENÜ</h2>
         </div>
 
-        <h5 class="outline3 text-center p-4 text-warning">SOUPS</h5>
+        <h3 class="px-4 pt-5 text-light font3">SOUPS</h3>
         
-        <div class="outline3 d-flex justify-content-between">
-          <div class="outline4 text-warning">
-            <div>soup1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quidem!</div>
-            <div>soup2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, non?</div>
-            <div>soup3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ipsam!</div>
+        <div class="d-flex justify-content-around">
+          <div class="lh-lg font-green font3 fs-4 outline">
+            <div>Leek and Potato Soup</div>
+            <div>Basil Tomato Soup with Orzo</div>
+            <div>Quick Ravioli & Spinach Soup</div>
           </div>
-          <div class="outline4 col-2 d-flex flex-column justify-content-between align-items-center text-warning">
-            <div>15€</div>
-            <div>50€</div>
-            <div>12€</div>
+          <div class="outline font3 fs-4 col-2 d-flex flex-column justify-content-between align-items-center text-light">
+            <div>8€</div>
+            <div>9€</div>
+            <div>10€</div>
           </div>
         </div>
         
-        <h5 class="outline3 text-center p-4 text-warning">MAIN COURSE</h5>
+        <h3 class="px-4 pt-5 text-light font3">MAIN COURSE</h3>
         
-        <div class="outline3 d-flex justify-content-between">
-          <div class="outline4 text-warning">
-            <div>main1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sint?</div>
-            <div>main2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sint?</div>
-            <div>main3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sint?</div>
+        <div class="d-flex justify-content-around">
+          <div class="lh-lg font-green font3 fs-4 outline">
+            <div>Caprese Salad with Pesto Sauce</div>
+            <div>Pasta Con Pomodoro E Basilico</div>
+            <div>Focaccia Bread</div>
+            <div>Pasta Carbonara</div>
+            <div>Mushroom Risotto</div>
           </div>
-          <div class="outline4 col-2 d-flex flex-column justify-content-between align-items-center text-warning">
-            <div>22€</div>
-            <div>24€</div>
-            <div>29€</div>
+          <div class="outline font3 fs-4 col-2 d-flex flex-column justify-content-between align-items-center text-light">
+            <div>16€</div>
+            <div>18€</div>
+            <div>19€</div>
+            <div>20€</div>
           </div>
         </div>
 
-        <h5 class="outline3 text-center p-4 text-warning">DESSERT</h5>
+        <h3 class="px-4 pt-5 text-light font3">DESSERT</h3>
 
-        <div class="outline3 d-flex justify-content-between">
-          <div class="outline4 text-warning">
-            <div>dessert1 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, fugiat!</div>
-            <div>dessert2 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, fugiat!</div>
-            <div>dessert3 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, fugiat!</div>
+        <div class="d-flex justify-content-around">
+          <div class="lh-lg font-green font3 fs-4 outline">
+            <div>Tiramisu</div>
+            <div>Campari and White Chocolate Cannoli</div>
+            <div>Pear and Hazelnut Torta Caprese</div>
           </div>
-          <div class="outline4 col-2 d-flex flex-column justify-content-between align-items-center text-warning">
-            <div>7€</div>
+          <div class="outline font3 fs-4 col-2 d-flex flex-column justify-content-between align-items-center text-light">
             <div>6€</div>
+            <div>7€</div>
             <div>8€</div>
           </div>
         </div>
+      </div>
+
+      <div class="d-flex flex-column d-none d-md-block col-10 col-md-6">
+        <img class="img-fluid p-4" src="./src/assets/images/menu-img.png" alt="menu-table">
       </div>
     </section>
 
