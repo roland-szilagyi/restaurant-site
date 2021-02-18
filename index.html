@@ -7,6 +7,7 @@
     <title>Restaurant-site</title>
     <link rel="stylesheet" href="./src/css/bootstrap.min.css">
     <link rel="stylesheet" href="./src/css/style.css">
+    <script src="https://kit.fontawesome.com/d9f73bf2ac.js" crossorigin="anonymous"></script>
 </head>
 <body class="bob-backgroun"><!--elvettem a "d"-t-->
     
@@ -14,7 +15,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <div class="container-fluid mx-1">
-                <a class="navbar-brand fs-6" href="#">MENÜ</a>
+                <a class="navbar-brand fs-6" id="menü" href="#menü">MENÜ</a>
                 <img class="w-50 d-sm-none py-2"src="./src/assets/images/logo.png" alt="restaurantlogo">
               <button class="navbar-toggler fs-6" type="button" data-bs-toggle="collapse" 
               data-bs-target="#navbarNavAltMarkup" 
@@ -26,11 +27,11 @@
               
               <div class="collapse navbar-collapse justify-content-evenly" id="navbarNavAltMarkup">
                 <div class="navbar-nav col-12 align-items-center justify-content-evenly">
-                  <a class="nav-link active" aria-current="page" href="#">RESERVATIONS</a>
+                  <a class="nav-link active btn btn-danger" aria-current="page" href="#reservations">RESERVATIONS</a>
                   <a class="nav-link" href="#">MENÜ</a>
                   <img class="w-25 d-none d-sm-block py-2"src="./src/assets/images/logo.png" alt="restaurantlogo">
                   <a class="nav-link" href="#">GIFT CARD</a>
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">LOCATIONS</a>
+                  <a class="nav-link" href="#">LOCATIONS</a>
                 </div>
               </div>
             </div>
@@ -50,51 +51,51 @@
     </div>
 
     <!--MENÜ-->
-    <section class="outline1 d-flex container-fluid justify-content-center p-2 py-5">
+    <section class="outline1 d-flex container-fluid justify-content-center p-2 py-5" id="menü">
       <div class="outline2 d-flex flex-column col-10">
-        <div class="text-center p-4">
+        <div class="text-center p-4 text-warning">
           <h3>MENÜ</h3>
         </div>
 
-        <h5 class="outline3 text-center p-4">SOUPS</h5>
+        <h5 class="outline3 text-center p-4 text-warning">SOUPS</h5>
         
         <div class="outline3 d-flex justify-content-between">
-          <div class="outline4">
+          <div class="outline4 text-warning">
             <div>soup1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quidem!</div>
             <div>soup2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, non?</div>
             <div>soup3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ipsam!</div>
           </div>
-          <div class="outline4 col-2 d-flex flex-column justify-content-between align-items-center">
+          <div class="outline4 col-2 d-flex flex-column justify-content-between align-items-center text-warning">
             <div>15€</div>
             <div>50€</div>
             <div>12€</div>
           </div>
         </div>
         
-        <h5 class="outline3 text-center p-4">MAIN COURSE</h5>
+        <h5 class="outline3 text-center p-4 text-warning">MAIN COURSE</h5>
         
         <div class="outline3 d-flex justify-content-between">
-          <div class="outline4">
+          <div class="outline4 text-warning">
             <div>main1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sint?</div>
             <div>main2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sint?</div>
             <div>main3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sint?</div>
           </div>
-          <div class="outline4 col-2 d-flex flex-column justify-content-between align-items-center">
+          <div class="outline4 col-2 d-flex flex-column justify-content-between align-items-center text-warning">
             <div>22€</div>
             <div>24€</div>
             <div>29€</div>
           </div>
         </div>
 
-        <h5 class="outline3 text-center p-4">DESSERT</h5>
+        <h5 class="outline3 text-center p-4 text-warning">DESSERT</h5>
 
         <div class="outline3 d-flex justify-content-between">
-          <div class="outline4">
+          <div class="outline4 text-warning">
             <div>dessert1 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, fugiat!</div>
             <div>dessert2 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, fugiat!</div>
             <div>dessert3 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, fugiat!</div>
           </div>
-          <div class="outline4 col-2 d-flex flex-column justify-content-between align-items-center">
+          <div class="outline4 col-2 d-flex flex-column justify-content-between align-items-center text-warning">
             <div>7€</div>
             <div>6€</div>
             <div>8€</div>
@@ -105,39 +106,41 @@
 
     <!--FOGLALAS-->
     <article class="outline4 d-flex">
+        
         <!--BALOLDAL KONTENER-->
         <section class="align-self-center d-none d-md-block p-4">
-          <img class="img-fluid" src="./src/assets/images/reserv-img.jpg" alt="">
+          <img class="img-fluid" src="./src/assets/images/reserv-img.jpg" alt="foodtools">
         </section>
         
         <!--JOBB KONTENR-->
-        <section class="outline container-fluid d-flex flex-column justify-content-evenly"><!--JOBBOLDAL KONTENER-->
+        <section class="outline container-fluid d-flex flex-column justify-content-evenly" id="reservations"><!--JOBBOLDAL KONTENER-->
             
             <div class="outline2 container-fluid text-center">
               <h2 class="p-5 text-warning">RESERVATION</h2>
             </div>
 
+            <!--ÜRLAP-->
             <form class="py-5 outline3 container-fluid d-flex align-items-center flex-column text-center col-sm-7 col-md-12 col-xl-8">
               
-              <div class="mb-3 py-1 col-10">
+              <div class="mb-3 py-1 col-10 text-warning">
                 <label for="reservationname" class="form-label">Name</label>
                 <input type="name" class="form-control text-center" id="reservationname" aria-describedby="reservation-name">
                 <div id="reservationname" class="form-text"></div>
               </div>
 
-              <div class="mb-3 py-1">
+              <div class="mb-3 py-1 text-warning">
                 <label for="reservationdate" class="form-label">Date</label>
                 <input type="date" class="form-control text-center" id="reservationdate" aria-describedby="reservation-date">
                 <div id="reservationdate" class="form-date"></div>
               </div>
 
-              <div class="mb-3 py-1">
+              <div class="mb-3 py-1 text-warning">
                 <label for="reservationtime" class="form-label">Time</label>
                 <input type="time" class="form-control text-center" id="reservationtime" aria-describedby="reservation-time">
                 <div id="reservationtime" class="form-time"></div>
               </div>
 
-              <div class="input-group mb-3 py-4 px-4">
+              <div class="input-group mb-3 py-4 px-4 text-warning">
                 <label class="input-group-text py-2" for="inputGroupSelect01">Person</label>
                 <select class="form-select" id="inputGroupSelect01">
                   <option selected>Choose...</option>
