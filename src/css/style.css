@@ -18,9 +18,11 @@
     outline: 1px solid yellow;
 }
 
-/*----TEMP-END----*/
-
 /*---COLORS---*/
+
+.collor {
+    color: lightgrey;
+}
 
 .font-green {
     color: rgb(116,160,0)
@@ -51,7 +53,28 @@
 @font-face{
     font-family: "amber-whiskey-aged-regular";
     src: url("/src/assets/AmberWhiskey.otf");
+}
+
+/*----NAVIGATION----*/
+
+.bob-background {
+    background-image: url("/src/assets/images/background.png");
+    background-size: cover;
+    height: 100%;
     
+}
+
+@media (min-width: 576px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-dark,
+    .navbar-toggler {
+        border-color: rgba(255,255,255,0)!important
+    }
 }
 
 .bookatable-btn {
@@ -66,29 +89,4 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-/*----NAVIGATION----*/
-
-.bob-background {
-    background-image: url("/src/assets/images/background.png");
-    background-size: cover;
-    height: 100%;
-    
-}
-
-/*navigacio*/
-@media (min-width: 576px) {
-    /*--NAVIGATION--*/
-    .navbar-brand {
-        display: none;
-    }
-}
-
-@media (max-width: 576px) {
-    
-    .navbar-dark,
-    .navbar-toggler {
-        border-color: rgba(255,255,255,0)!important
-    }
 }
